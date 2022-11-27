@@ -1,3 +1,43 @@
+## Install
+
+1. **Clone Repository**
+
+```bash
+git clone https://github.com/nafiswatsiq/repsonic.git
+cd repsonic
+composer install
+cp .env.example .env
+```
+
+2. **Buka `.env` lalu ubah baris berikut sesuai dengan databasemu yang ingin dipakai**
+
+```bash
+DB_PORT=3306
+DB_DATABASE=repsonic
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+4. **Instalasi Aplikasi**
+
+```bash
+php artisan key:generate
+php artisan migrate --seed
+```
+
+5. **Jalankan Aplikasi**
+
+```bash
+php artisan serve
+```
+## Akun Default
+
+- email: admin@gmail.com
+- Password: 12345678
+---
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
